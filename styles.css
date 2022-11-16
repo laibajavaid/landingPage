@@ -1,0 +1,84 @@
+/* styles.css */
+
+body {
+    margin: 0;
+}
+
+.backgroundGIF {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -2; /* allow for over lapping */
+}
+
+/* setting up the header */
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
+
+.leftHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 16em;
+}
+
+.logoImageContainer {
+    display: flex;
+    /* align-items: center; */
+    margin-right: 15em;
+}
+
+.logoImage {
+    width: 550%;
+    padding: 10px;
+}
+
+.rightHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; 
+}
+
+.homePage, .comic, .movies, .characters {
+    font-size: 20px;
+    text-decoration: none; /* gets rid of the underline*/
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    padding: 10px;
+}
+
+.homePage:after, .comic:after, .movies:after, .characters:after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(253, 253, 253));
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.homePage:hover:after, .comic:hover:after, .movies:hover:after, .characters:hover:after {
+    width: 100%;
+}
+
+.homePage:hover, .comic:hover, .movies:hover, .characters:hover {
+    text-shadow: 0 0 5px rgb(255, 0, 0);
+} 
