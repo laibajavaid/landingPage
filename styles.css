@@ -13,6 +13,7 @@ body {
     top: 0;
     left: 0;
     z-index: -2;
+    /* allows for overlapping */
 }
 
 /* setting up the header */
@@ -32,12 +33,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 16em;
+    width: 256px;
 }
 
 .logoImageContainer {
     display: flex;
-    margin-right: 15em;
+    margin-right: 240px;
 }
 
 .logoImage {
@@ -50,19 +51,26 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding: 10px; 
+    padding: 10px;
 }
 
-.homePage, .comic, .movies, .characters {
+.homePage,
+.comic,
+.movies,
+.characters {
     font-size: 20px;
-    text-decoration: none; /* gets rid of the underline*/
-    color:white;
+    text-decoration: none;
+    /* gets rid of the underline*/
+    color: white;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
     padding: 10px;
 }
 
-.homePage:after, .comic:after, .movies:after, .characters:after {
+.homePage:after,
+.comic:after,
+.movies:after,
+.characters:after {
     content: "";
     position: absolute;
     background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(253, 253, 253));
@@ -73,13 +81,19 @@ body {
     transition: 0.5s;
 }
 
-.homePage:hover:after, .comic:hover:after, .movies:hover:after, .characters:hover:after {
+.homePage:hover:after,
+.comic:hover:after,
+.movies:hover:after,
+.characters:hover:after {
     width: 100%;
 }
 
-.homePage:hover, .comic:hover, .movies:hover, .characters:hover {
+.homePage:hover,
+.comic:hover,
+.movies:hover,
+.characters:hover {
     text-shadow: 0 0 5px rgb(255, 0, 0);
-} 
+}
 
 /* first layer */
 .layerOne {
@@ -100,13 +114,13 @@ body {
 
 .welcomeMessage {
     font-size: 50px;
-    font-weight: 900; 
+    font-weight: 900;
     text-shadow: 0 0 10px white;
     color: white;
     text-align: center;
     margin-top: 10px;
     font-family: 'Times New Roman', Times, serif;
-} 
+}
 
 .description {
     color: white;
@@ -137,6 +151,99 @@ body {
 }
 
 .freeTrailContainer:hover {
-    transform: translateY(-5%); /* allows the container to hover up, along the y axis*/
+    transform: translateY(-5%);
+    /* allows the container to hover up, along the y axis*/
     box-shadow: 0 0 10px white;
+}
+
+/* second layer */
+.layerTwo {
+    background-image: linear-gradient(rgb(99, 98, 98), rgb(135, 133, 133));
+    margin-top: 300px;
+}
+
+.layerTwoContainer {
+    padding-top: 20px;
+}
+
+.layerTwoHeading {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px white;
+    margin: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.layerTwoPictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.captainAmerica,
+.blackWidow,
+.thor,
+.ironMan,
+.hawkEye,
+.hulk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0px;
+    padding: 60px;
+}
+
+.captainAmericaPic,
+.blackWidowPic,
+.thorPic,
+.ironManPic,
+.hawkEyePic,
+.hulkPic {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border: 0.3em solid rgb(255, 255, 255);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px black;
+    transition: 0.3s;
+}
+
+.captainAmericaPic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(220, 217, 217);
+}
+
+.blackWidowPic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+}
+
+.thorPic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(14, 130, 213);
+}
+
+.ironManPic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(211, 198, 12);
+}
+
+.hawkEyePic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(127, 2, 173);
+}
+
+.hulkPic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(10, 182, 70);
+}
+
+.text {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin: 23px;
+    font-family: 'Times New Roman', Times, serif;
 }
