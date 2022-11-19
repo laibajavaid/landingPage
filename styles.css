@@ -58,11 +58,11 @@ body {
 .comic,
 .movies,
 .characters {
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     /* gets rid of the underline*/
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Andale Mono, monospace;
     position: relative;
     padding: 10px;
 }
@@ -119,15 +119,15 @@ body {
     color: white;
     text-align: center;
     margin-top: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: fantasy;
 }
 
 .description {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     padding: 20px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Andale Mono, monospace;
 }
 
 .freeTrailContainer {
@@ -139,6 +139,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 20px;
     background-color: rgb(255, 0, 0);
     transition: 0.3s;
@@ -147,12 +148,12 @@ body {
 .freeTrail {
     color: white;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Didot;
 }
 
 .freeTrailContainer:hover {
-    transform: translateY(-5%);
     /* allows the container to hover up, along the y axis*/
+    transform: translateY(-5%);
     box-shadow: 0 0 10px white;
 }
 
@@ -167,12 +168,12 @@ body {
 }
 
 .layerTwoHeading {
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     color: white;
     text-shadow: 0 0 10px white;
     margin: 50px;
-    font-family: 'Times New Roman', Times, serif;
+   font-family: fantasy;
 }
 
 .layerTwoPictures {
@@ -180,6 +181,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .captainAmerica,
@@ -192,7 +194,8 @@ body {
     flex-direction: column;
     align-items: center;
     flex: 1 1 0px;
-    padding: 60px;
+    padding: 50px;
+    margin-top: -20px;
 }
 
 .captainAmericaPic,
@@ -207,37 +210,6 @@ body {
     border: 0.3em solid rgb(255, 255, 255);
     border-radius: 24px;
     box-shadow: 0 10px 30px black;
-    transition: 0.3s;
-}
-
-.captainAmericaPic:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgb(220, 217, 217);
-}
-
-.blackWidowPic:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgb(255, 0, 0);
-}
-
-.thorPic:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgb(14, 130, 213);
-}
-
-.ironManPic:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgb(211, 198, 12);
-}
-
-.hawkEyePic:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgb(127, 2, 173);
-}
-
-.hulkPic:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgb(10, 182, 70);
 }
 
 .text {
@@ -245,5 +217,136 @@ body {
     color: white;
     font-size: 28px;
     margin: 23px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Marker Felt, fantasy;
 }
+
+/* overlay with hover effect on the images */
+.dialogueCaptainAmerica, .creditsCaptainAmerica {
+    box-shadow: 0 0 30px rgb(220, 217, 217);
+    background-color: rgb(86, 85, 85);
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+  }
+
+  .dialogueBlackWidow, .creditsBlackWidow {
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+    background-color: rgb(127, 21, 21);
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+  }
+
+  .dialogueThor, .creditsThor {
+    box-shadow: 0 0 30px rgb(71, 178, 255);
+    background-color: rgb(1, 99, 168);
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+  }
+
+  .dialogueIronMan, .creditsIronMan {
+    box-shadow: 0 0 30px rgb(211, 198, 12);
+    background-color: rgb(132, 125, 20);
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+  }
+
+  .dialogueHawkEye, .creditsHawkEye {
+    box-shadow: 0 0 30px rgb(127, 2, 173);
+    background-color: rgb(62, 3, 84);
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+  }
+
+  .dialogueHulk, .creditsHulk {
+    box-shadow: 0 0 30px rgb(10, 182, 70);
+    background-color: rgb(5, 124, 47);
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+  }
+
+  .creditsCaptainAmerica, .creditsBlackWidow, .creditsThor, .creditsIronMan, .creditsHawkEye, .creditsHulk {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .hoverImage {
+    display: inline-block;
+    margin: 8px;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+  }
+  
+  .hoverImage * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+  }
+  
+  .hoverImage::before,
+  .hoverImage::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(2);
+  }
+  
+  .hoverImage figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.2s;
+  }
+  
+  .hoverImage:hover::before,
+  .hoverImage:hover::after {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  
+  .hoverImage:hover > img {
+    opacity: 0.3;
+  }
+  
+  .hoverImage:hover figcaption {
+    opacity: 1;
+  }
+
+/* third layer */
