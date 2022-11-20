@@ -59,8 +59,8 @@ body {
 .movies,
 .characters {
   font-size: 15px;
-  text-decoration: none;
   /* gets rid of the underline*/
+  text-decoration: none;
   color: white;
   font-family: Andale Mono, monospace;
   position: relative;
@@ -103,12 +103,11 @@ body {
 .layerOneContainer {
   width: 85%;
   height: 100%;
-  border-radius: 25px;
-  margin: 200px auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 200px auto 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -118,7 +117,7 @@ body {
   text-shadow: 0 0 10px white;
   color: white;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: fantasy;
 }
 
@@ -131,16 +130,16 @@ body {
 }
 
 .freeTrailContainer {
-  margin-top: 3px;
-  border: 2px solid white;
-  border-radius: 2em;
-  width: 160px;
-  height: 65px;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 3px 10px;
   margin-bottom: 20px;
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 18px;
   background-color: rgb(255, 0, 0);
   transition: 0.3s;
 }
@@ -148,7 +147,8 @@ body {
 .freeTrail {
   color: white;
   text-align: center;
-  font-family: Didot;
+  text-decoration: none;
+  font-family: Copperplate;
 }
 
 .freeTrailContainer:hover {
@@ -386,7 +386,6 @@ body {
   color: white;
   font-size: 30px;
   text-align: center;
-  border-radius: 25px;
   font-family: fantasy;
   text-shadow: 0 0 10px white;
   background-color: rgba(0, 0, 0, 0.8);
@@ -395,4 +394,57 @@ body {
 .layerThreeCredits {
   margin-top: 30px;
   font-size: 20px;
+}
+
+/* fourth layer */
+.layerFour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-image: linear-gradient(rgb(99, 98, 98), rgb(162, 160, 160));
+}
+
+.layerFourContainer {
+  width: 85%;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.layerFourText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  font-family: Andale Mono, monospace;
+}
+
+.layerFourButtonContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* margin: 0 5em 0 3em; */
+}
+
+.signUpButton {
+  color: white;
+  font-size: 17px;
+  border-radius: 8px;
+  padding: 10px 25px;
+  transition: 0.3s;
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: rgb(255, 0, 0);
+  font-family: Copperplate;
+}
+
+.signUpButton:hover {
+  transform: translateY(-5%);
+  box-shadow: 0 0 10px white;
 }
