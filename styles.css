@@ -1,187 +1,187 @@
 /* styles.css */
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /* background of the webpage */
 #backgroundVideo {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    /* allows for overlapping */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  /* allows for overlapping */
 }
 
 /* setting up the header */
 .header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.9);
-    text-decoration: none;
-    position: fixed;
-    top: 0;
-    z-index: 9;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  z-index: 9;
 }
 
 .leftHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 256px;
 }
 
 .logoImageContainer {
-    display: flex;
-    margin-right: 240px;
+  display: flex;
+  margin-right: 240px;
 }
 
 .logoImage {
-    width: 550%;
-    padding: 10px;
+  width: 550%;
+  padding: 10px;
 }
 
 .rightHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .homePage,
 .comic,
 .movies,
 .characters {
-    font-size: 15px;
-    text-decoration: none;
-    /* gets rid of the underline*/
-    color: white;
-    font-family: Andale Mono, monospace;
-    position: relative;
-    padding: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  /* gets rid of the underline*/
+  color: white;
+  font-family: Andale Mono, monospace;
+  position: relative;
+  padding: 10px;
 }
 
 .homePage:after,
 .comic:after,
 .movies:after,
 .characters:after {
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(253, 253, 253));
-    height: 2px;
-    width: 0%;
-    left: 0;
-    bottom: -2px;
-    transition: 0.5s;
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(253, 253, 253));
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -2px;
+  transition: 0.5s;
 }
 
 .homePage:hover:after,
 .comic:hover:after,
 .movies:hover:after,
 .characters:hover:after {
-    width: 100%;
+  width: 100%;
 }
 
 .homePage:hover,
 .comic:hover,
 .movies:hover,
 .characters:hover {
-    text-shadow: 0 0 5px rgb(255, 0, 0);
+  text-shadow: 0 0 5px rgb(255, 0, 0);
 }
 
 /* first layer */
 .layerOne {
-    position: relative;
+  position: relative;
 }
 
 .layerOneContainer {
-    width: 85%;
-    height: 100%;
-    border-radius: 25px;
-    margin: 200px auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
+  width: 85%;
+  height: 100%;
+  border-radius: 25px;
+  margin: 200px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .welcomeMessage {
-    font-size: 50px;
-    font-weight: 900;
-    text-shadow: 0 0 10px white;
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-    font-family: fantasy;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 0 0 10px white;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-family: fantasy;
 }
 
 .description {
-    color: white;
-    font-size: 25px;
-    padding: 20px;
-    text-align: center;
-    font-family: Andale Mono, monospace;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  font-family: Andale Mono, monospace;
 }
 
 .freeTrailContainer {
-    margin-top: 3px;
-    border: 2px solid white;
-    border-radius: 2em;
-    width: 160px;
-    height: 65px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 20px;
-    background-color: rgb(255, 0, 0);
-    transition: 0.3s;
+  margin-top: 3px;
+  border: 2px solid white;
+  border-radius: 2em;
+  width: 160px;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: rgb(255, 0, 0);
+  transition: 0.3s;
 }
 
 .freeTrail {
-    color: white;
-    text-align: center;
-    font-family: Didot;
+  color: white;
+  text-align: center;
+  font-family: Didot;
 }
 
 .freeTrailContainer:hover {
-    /* allows the container to hover up, along the y axis*/
-    transform: translateY(-5%);
-    box-shadow: 0 0 10px white;
+  /* allows the container to hover up, along the y axis*/
+  transform: translateY(-5%);
+  box-shadow: 0 0 10px white;
 }
 
 /* second layer */
 .layerTwo {
-    background-image: linear-gradient(rgb(99, 98, 98), rgb(135, 133, 133));
-    margin-top: 300px;
+  background-image: linear-gradient(rgb(99, 98, 98), rgb(135, 133, 133));
+  margin-top: 300px;
 }
 
 .layerTwoContainer {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .layerTwoHeading {
-    font-size: 60px;
-    text-align: center;
-    color: white;
-    text-shadow: 0 0 10px white;
-    margin: 50px;
-   font-family: fantasy;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px white;
+  margin: 50px;
+  font-family: fantasy;
 }
 
 .layerTwoPictures {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .captainAmerica,
@@ -190,12 +190,12 @@ body {
 .ironMan,
 .hawkEye,
 .hulk {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 0px;
-    padding: 50px;
-    margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0px;
+  padding: 50px;
+  margin-top: -20px;
 }
 
 .captainAmericaPic,
@@ -204,149 +204,195 @@ body {
 .ironManPic,
 .hawkEyePic,
 .hulkPic {
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
-    border: 0.3em solid rgb(255, 255, 255);
-    border-radius: 24px;
-    box-shadow: 0 10px 30px black;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border: 0.3em solid rgb(255, 255, 255);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px black;
 }
 
 .text {
-    text-align: center;
-    color: white;
-    font-size: 28px;
-    margin: 23px;
-    font-family: Marker Felt, fantasy;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin: 23px;
+  font-family: Marker Felt, fantasy;
 }
 
 /* overlay with hover effect on the images */
-.dialogueCaptainAmerica, .creditsCaptainAmerica {
-    box-shadow: 0 0 30px rgb(220, 217, 217);
-    background-color: rgb(86, 85, 85);
-    color: white;
-    font-size: 15px;
-    padding: 5px;
-    justify-content: center;
-    text-align: center;
-    font-family: Andale Mono, monospace;
-  }
+.dialogueCaptainAmerica,
+.creditsCaptainAmerica {
+  box-shadow: 0 0 30px rgb(220, 217, 217);
+  background-color: rgb(86, 85, 85);
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  font-family: Andale Mono, monospace;
+}
 
-  .dialogueBlackWidow, .creditsBlackWidow {
-    box-shadow: 0 0 30px rgb(255, 0, 0);
-    background-color: rgb(127, 21, 21);
-    color: white;
-    font-size: 15px;
-    padding: 5px;
-    justify-content: center;
-    text-align: center;
-    font-family: Andale Mono, monospace;
-  }
+.dialogueBlackWidow,
+.creditsBlackWidow {
+  box-shadow: 0 0 30px rgb(255, 0, 0);
+  background-color: rgb(127, 21, 21);
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  font-family: Andale Mono, monospace;
+}
 
-  .dialogueThor, .creditsThor {
-    box-shadow: 0 0 30px rgb(71, 178, 255);
-    background-color: rgb(1, 99, 168);
-    color: white;
-    font-size: 15px;
-    padding: 5px;
-    justify-content: center;
-    text-align: center;
-    font-family: Andale Mono, monospace;
-  }
+.dialogueThor,
+.creditsThor {
+  box-shadow: 0 0 30px rgb(71, 178, 255);
+  background-color: rgb(1, 99, 168);
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  font-family: Andale Mono, monospace;
+}
 
-  .dialogueIronMan, .creditsIronMan {
-    box-shadow: 0 0 30px rgb(211, 198, 12);
-    background-color: rgb(132, 125, 20);
-    color: white;
-    font-size: 15px;
-    padding: 5px;
-    justify-content: center;
-    text-align: center;
-    font-family: Andale Mono, monospace;
-  }
+.dialogueIronMan,
+.creditsIronMan {
+  box-shadow: 0 0 30px rgb(211, 198, 12);
+  background-color: rgb(132, 125, 20);
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  font-family: Andale Mono, monospace;
+}
 
-  .dialogueHawkEye, .creditsHawkEye {
-    box-shadow: 0 0 30px rgb(127, 2, 173);
-    background-color: rgb(62, 3, 84);
-    color: white;
-    font-size: 15px;
-    padding: 5px;
-    justify-content: center;
-    text-align: center;
-    font-family: Andale Mono, monospace;
-  }
+.dialogueHawkEye,
+.creditsHawkEye {
+  box-shadow: 0 0 30px rgb(127, 2, 173);
+  background-color: rgb(62, 3, 84);
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  font-family: Andale Mono, monospace;
+}
 
-  .dialogueHulk, .creditsHulk {
-    box-shadow: 0 0 30px rgb(10, 182, 70);
-    background-color: rgb(5, 124, 47);
-    color: white;
-    font-size: 18px;
-    padding: 5px;
-    justify-content: center;
-    text-align: center;
-    font-family: Andale Mono, monospace;
-  }
+.dialogueHulk,
+.creditsHulk {
+  box-shadow: 0 0 30px rgb(10, 182, 70);
+  background-color: rgb(5, 124, 47);
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  font-family: Andale Mono, monospace;
+}
 
-  .creditsCaptainAmerica, .creditsBlackWidow, .creditsThor, .creditsIronMan, .creditsHawkEye, .creditsHulk {
-    font-size: 10px;
-    margin-top: 10px;
-  }
+.creditsCaptainAmerica,
+.creditsBlackWidow,
+.creditsThor,
+.creditsIronMan,
+.creditsHawkEye,
+.creditsHulk {
+  font-size: 10px;
+  margin-top: 10px;
+}
 
-  .hoverImage {
-    display: inline-block;
-    margin: 8px;
-    position: relative;
-    text-align: center;
-    width: 250px;
-    height: 300px;
-  }
-  
-  .hoverImage * {
-    box-sizing: border-box;
-    transition: all 0.45s ease;
-  }
-  
-  .hoverImage::before,
-  .hoverImage::after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: all 0.3s ease;
-    z-index: 1;
-    opacity: 0;
-    transform: scaleY(2);
-  }
-  
-  .hoverImage figcaption {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    align-items: center;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-    z-index: 2;
-    transition-delay: 0.2s;
-  }
-  
-  .hoverImage:hover::before,
-  .hoverImage:hover::after {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-  
-  .hoverImage:hover > img {
-    opacity: 0.3;
-  }
-  
-  .hoverImage:hover figcaption {
-    opacity: 1;
-  }
+.hoverImage {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+  text-align: center;
+  width: 250px;
+  height: 300px;
+}
+
+.hoverImage * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.hoverImage::before,
+.hoverImage::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+}
+
+.hoverImage figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.2s;
+}
+
+.hoverImage:hover::before,
+.hoverImage:hover::after {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.hoverImage:hover>img {
+  opacity: 0.3;
+}
+
+.hoverImage:hover figcaption {
+  opacity: 1;
+}
 
 /* third layer */
+.layerThree {
+  background-image: url(resources/superheros.webp);
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
+
+.layerThreeHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.layerThreeQuote,
+.layerThreeCredits {
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 25px;
+  font-family: fantasy;
+  text-shadow: 0 0 10px white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.layerThreeCredits {
+  margin-top: 30px;
+  font-size: 20px;
+}
