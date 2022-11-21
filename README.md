@@ -12,4 +12,7 @@ CSS
 
 https://user-images.githubusercontent.com/77513009/202967688-bbeeb4bf-e6c0-4f23-8bb4-802297a47fda.mov
 
+** Note: the resolution of the screen recording has been reduced so the video can be uploaded in one piece
+
 ## Links
+[View the webpage here](https://laibajavaid.github.io/landingPage/)
